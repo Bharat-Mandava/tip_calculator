@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tip Calculator</title>
+	
+</head>
+
+
+<h1 style="text-align: center;">Tip Calculator </h1>
+<div style= "text-align: center;">
+<form >
+Hello, lets calculate the tip!!
+<br><br>
+
+$
+<input id="totalBill" type ="number" placeholder="Please enter your bill">
+<br><br>
+<p>How was the service? </p>
+<select id="serviceQuality">
+    
+<option value=0.3> Very Good - 30%</option>
+<option value=0.15> Good - 15%</option>
+<option value = 0.05> Bad - 5%</option>
+<option value=0.01> Very Bad - 1%</option>
+</select>
+
+<br><br>
+</form>
+<p> Do you want to split the bill? </p>
+
+<input id="splitQuantity" type="number" placeholder="Number of people"> 
+<br><br>
+<br>
+<button type="button" id="calculatetip">Calculate Tip</button>
+
+
+</p>
+</div>
+<div  id ="tipbox" style= "text-align: center;">
+<p > $<span id="resulttip">0:00</span> per person</p>
+
+</div>
+
+<script src="app.js"></script>
